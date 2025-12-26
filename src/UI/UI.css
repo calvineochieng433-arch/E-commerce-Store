@@ -1,0 +1,230 @@
+/* Backdrop */
+.offer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  /* background: #00000080; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: pointer !important;
+}
+
+/* Offer container */
+.offer-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+/* Close button (X) */
+.offer-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #fff;
+  color: #221400;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.offer-close:hover {
+  background: #f5f5f5;
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.offer-close:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #22140040;
+}
+
+/* 50% Image */
+.offer-image {
+  flex: 0 0 50%;
+  height: 100%;
+}
+
+.offer-image img {
+  display: flex; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* 50% Content */
+.offer-content {
+  flex: 0 0 50%;
+  padding: clamp(1.8rem, 4vw, 2.4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.offer-content h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #221400;
+}
+
+.offer-content p {
+  font-size: 1rem;
+  max-width: 420px;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Input */
+.offer-content input {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.7rem 1rem;
+  border-radius: 25px;
+  border: 1px solid #cfcaca99;
+  font-size: 0.95rem;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+/* CTA button */
+.offer-cta {
+  background: #221400;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin-top: 3rem;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-cta:hover {
+  background: #2d1a00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(34, 20, 0, 0.25);
+}
+
+.offer-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(34, 20, 0, 0.2);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .offer-container {
+    flex-direction: column;
+  }
+
+  .offer-image,
+  .offer-content {
+    flex: 0 0 100%;
+  }
+
+  .offer-image img {
+    height: 220px;
+  }
+}
+
+.ski {
+  background-color: #d36120;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  border: none !important;
+  rotate: -20deg;
+  
+  h3 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
+  }
+}
+
+.bags {
+  background-color: #9929EA;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  border: none !important;
+  rotate: -20deg;
+  
+  h3 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    white-space: nowrap !important;
+  }
+}
+
+.Apparel {
+  background-color: #5A7863;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  border: none !important;
+  white-space: nowrap !important;
+  rotate: -20deg;
+  
+  h3 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    border: none !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ski, .bags,.Apparel {
+    padding: 0.2rem 0.8rem;
+    border-radius: 10px;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+/* .Image1, .Image2, .Image3 {
+  overflow: hidden;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 15px;
+  display: block;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+} */
