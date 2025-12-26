@@ -1911,3 +1911,15 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .lins-logo {
+    left: 50%;
+    top: 1.25rem;
+    transform: translateX(-50%);
+  }
+
+  .lins-logo img {
+    height: 32px;
+  }
+}
